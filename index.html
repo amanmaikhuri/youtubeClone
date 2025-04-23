@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreamSnap</title>
+    <link rel="shortcut icon" href="/images/streamsnap.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body class="lightmode">
+     <!-- header -->
+    <header role="heading">
+        <div class="logo">
+            <i class="fa-solid fa-bars" id="show-menu"></i>
+            <h1>StreamSnap</h1>
+            <!-- <img src="/images/logo.png" alt="streamSnap" height="40px"> -->
+        </div>
+        <div class="search-container">
+            <input type="text" placeholder="Search" id="searchbar">
+            <i class="fa-brands fa-searchengin" ></i>
+        </div>
+        <div class="user-section">
+            <div class="upload">
+                <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="notification">
+                <i class="fa-solid fa-bell"></i>
+            </div>
+            <div class="toggle">
+                <i class="fas"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- sidebar -->
+    <aside role="sidebar" id="sidebar" class="lightmode">
+        <div class="logo" id="sidebar-logo">
+            <i class="fa-solid fa-bars" id="hide-menu"></i>
+            <img src="/images/snap.png" alt="streamSnap" height="40px">
+            <i class="fa-solid fa-user"></i>
+        </div>
+        <ul class="lists" id="nav">
+            <li><i class="fa-solid fa-house"></i> Home</li>            
+            <li><i class="fa-solid fa-play"></i> Shorts</li>
+            <li><i class="fa-solid fa-subscript"></i> Subscriptions</li>
+            <li><i class="fa-solid fa-music"></i> Youtube Music</li>
+        </ul>
+        <h2>You</h2>
+        <ul class="lists">
+            <li><i class="fa-solid fa-clock-rotate-left"></i> History</li>
+            <li><i class="fa-brands fa-discourse"></i> Playlists</li>
+            <li><i class="fa-solid fa-camera"></i> Your Vedios</li>
+            <li><i class="fa-brands fa-discourse"></i> Your Courses</li>
+            <li><i class="fa-solid fa-play"></i> Watch Later</li>
+            <li><i class="fa-regular fa-thumbs-up"></i> Liked Vedios</li>
+            <li><i class="fa-solid fa-download"></i> Downloads</li>
+            <li><i class="fa-solid fa-paperclip"></i> Your Clips</li>
+        </ul>
+        <h2>Subscriptions</h2>
+        <ul class="lists">
+            <li><i class="fa-solid fa-circle-user"></i> Aman Maikhuree</li>
+            <li><i class="fa-solid fa-circle-user"></i> Tedx Talks</li>
+            <li><i class="fa-solid fa-circle-user"></i> Josh Talks Stocks</li>
+            <li> <i class="fa-solid fa-circle-user"></i> Mel robbins</li>
+        </ul>
+    </aside>
+
+    <!-- main section -->
+    <main>
+            <div class="vedio-container"></div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        Made with <i class="fa-solid fa-heart"></i> by Aman Maikhuree
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
