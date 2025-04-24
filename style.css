@@ -101,6 +101,13 @@ header{
     border-radius: 1rem;
 }
 
+.search-container input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+outline: none;
+}
+
 .search-container i{
     color: var(--primary);
     height: 100%; width: 10%;
@@ -136,22 +143,16 @@ header{
 @media (min-width: 600px){
     body{
         font-size: 1rem;
+        padding-top: 1.25rem;
     }
     header{
-        height: 5rem;
-        padding: 1rem 5rem;
+        height: 4rem;
+        padding: 1rem 4rem;
     }
 
     .search-container input{
-        padding: 0.5rem;
+        padding: 0.65rem;
     }
-
-   .search-container input:focus,
-select:focus,
-textarea:focus,
-button:focus {
-    outline: none;
-}
 
     .logo{
         gap: 1rem;
@@ -161,16 +162,20 @@ button:focus {
      .search-container input, 
      .search-container i, 
      .user-section i{
-        font-size: 2rem;
+        font-size: 1.25rem;
     }
 
     .logo h1{
-        font-size: 2.5rem;
+        font-size: 2rem;
         font-stretch: extra-expanded;
     }
 
     .user-section{
         gap: 1rem;
+    }
+
+    .user-section i{
+        font-size: 1.5rem;
     }
 }
 
@@ -273,32 +278,30 @@ li:hover{
 
 /*main content container*/
 main{
-    width: 100vw;
     padding: 2rem 0;
-}
-
-@media (min-width:1200px){
-    main{
-        margin: 0 15rem;
-        /* padding-left: 15rem; */
-    }
+    display: flex;
+    justify-content: center;
 }
 
 /*vedio container*/
 .vedio-container{
+    width: 90vw;
+    padding: 2rem;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 1rem;
 }
 
 .vedio-content{
-    width: 20rem;
+    width: 17em;
+    height: 14em;
     border-radius: 0.5rem;
 }
 
 .vedio-content img{
-    height: 25vh;
-    width: 100%;
+    height: 10em;
+    width: 17em;
     border-top-right-radius: 0.75rem;
     border-top-left-radius: 0.75rem;
 }
@@ -332,20 +335,24 @@ main{
     gap: 0.5rem;
 }
 
-@media (min-width: 600px){
-    .creator-content, .creator-details{
+@media (min-width: 1200px){
+    .vedio-content{
+        width: 35em;
+        height: 33em;
+        border-radius: 0.5rem;
+        font-size: 1rem;
+    }
+
+    .vedio-content img{
+        height: 26em;
+        width: 35em;
+        border-top-right-radius: 0.75rem;
+        border-top-left-radius: 0.75rem;
+    }
+
+    .creator-content, .creator-details p{
         font-size: 1rem;
         font-weight: 600;
-    }
-
-    main{
-        padding-top: 6.5rem;
-    }
-}
-
-@media (min-width:1200px){
-    .vedio-content{
-        width: 600px;
     }
 }
 
@@ -365,7 +372,7 @@ footer i{
 
 @media (min-width:600px){
     footer ,footer i{
-        font-size: 2rem;
+        font-size: 1rem;
         padding: 0.4rem;
     }
 }
