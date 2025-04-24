@@ -278,15 +278,14 @@ li:hover{
 
 /*main content container*/
 main{
-    padding: 2rem 0;
     display: flex;
     justify-content: center;
 }
 
 /*vedio container*/
 .vedio-container{
-    width: 90vw;
-    padding: 2rem;
+    width: 95vw;
+    padding-top: 4rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -336,6 +335,9 @@ main{
 }
 
 @media (min-width: 1200px){
+    .vedio-container{
+        width: 90vw;
+    }
     .vedio-content{
         width: 35em;
         height: 33em;
